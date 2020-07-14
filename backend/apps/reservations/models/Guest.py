@@ -1,13 +1,10 @@
 from django.db import models
 from django_countries.fields import CountryField
 from phonenumber_field.modelfields import PhoneNumberField
+from ...utils import SEX_CHOICES
 
 
 class Guest(models.Model):
-    SEX_CHOICES = (
-        ('M', 'Male'),
-        ('F', 'Female'),
-    )
 
     first_name = models.CharField(max_length=120)
     last_name = models.CharField(max_length=120)
