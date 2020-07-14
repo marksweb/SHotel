@@ -27,3 +27,6 @@ class Employee(models.Model):
     function = models.CharField(max_length=2, choices=FUNCTION_CHOICES)
     phone_number = PhoneNumberField()
     passport_number = models.CharField(max_length=30)
+
+    def __str__(self):
+        return f'{self.first_name} {self.last_name}'
