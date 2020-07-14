@@ -8,6 +8,9 @@ verify_ssl = true
 [packages]
 django = "*"
 django-split-settings = "*"
+django-countries = "*"
+phonenumberslite = "*"
+django-phonenumber-field = "*"
 
 [requires]
 python_version = "3.7"

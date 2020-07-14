@@ -6,6 +6,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # required apps
+    'django_countries',
+    'phonenumber_field',
+
     # project apps
     'apps.reservations',
 ]
