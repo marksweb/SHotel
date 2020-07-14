@@ -12,4 +12,5 @@ INSTALLED_APPS = [
 
     # project apps
     'apps.reservations',
+    'apps.management',
 ]
