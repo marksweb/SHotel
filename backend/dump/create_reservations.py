@@ -25,6 +25,7 @@ def create_reservations():
                                      last_name=fake.last_name(),
                                      sex=random.choice(['M', 'F']),
                                      birth_date=fake.date(),
+                                     birth_place=fake.city(),
                                      nationality=fake.country_code(),
                                      passport_number=id_generator(),
                                      phone_number=fake.phone_number(),
