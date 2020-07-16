@@ -13,4 +13,7 @@ INSTALLED_APPS = [
     # project apps
     'apps.reservations',
     'apps.management',
+
+    # dev apps
+    'django_extensions',
 ]

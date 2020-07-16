@@ -29,8 +29,8 @@ class Reservation(models.Model):
         if not self.room.is_available:
             raise ValidationError('Room is occupied.')
     
-    def save(self):
-        super().save()
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
 
         self.room.is_available = False
         self.room.save()
