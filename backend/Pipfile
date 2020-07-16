@@ -11,6 +11,8 @@ django-split-settings = "*"
 django-countries = "*"
 phonenumberslite = "*"
 django-phonenumber-field = "*"
+django-extensions = "*"
+faker = "*"
 
 [requires]
 python_version = "3.7"
