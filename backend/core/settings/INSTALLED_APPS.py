@@ -9,6 +9,7 @@ INSTALLED_APPS = [
     # required apps
     'django_countries',
     'phonenumber_field',
+    'rest_framework',
 
     # project apps
     'apps.reservations',
