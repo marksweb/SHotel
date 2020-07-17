@@ -7,5 +7,6 @@ include(
     'DATABASES.py',
     'INSTALLED_APPS.py',
     'MIDDLEWARE.py',
+    'REST_FRAMEWORK.py',
     'TEMPLATES.py',
 )
