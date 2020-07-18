@@ -26,14 +26,11 @@ class Reservation(models.Model):
             raise ValidationError('Date cannot be in the past.')
         if self.check_in >= self.check_out:
             raise ValidationError('Reservation must last at least one day.')
-        if not self.room.is_available:
-            raise ValidationError('Room is occupied.')
-    
-    def save(self, *args, **kwargs):
-        super().save(*args, **kwargs)
-
-        self.room.is_available = False
-        self.room.save()
+        if self.room.reservations.filter(check_in__lte=self.check_in,
+                                         check_out__gt=self.check_in) \
+           or self.room.reservations.filter(check_in__lt=self.check_out,
+                                            check_out__gte=self.check_out):
+            raise ValidationError('Room is occupied')
 
     def __str__(self):
         return f'Reservation for {self.guest.first_name} \
