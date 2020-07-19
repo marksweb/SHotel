@@ -1,3 +1,3 @@
 docker-compose up -d
 sleep 10
-docker exec -it backend python manage.py migrate
+docker exec -it shotel_backend python manage.py migrate

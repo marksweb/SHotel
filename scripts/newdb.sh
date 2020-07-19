@@ -1,5 +1,5 @@
 cd ..
 cd backend
-pipenv run python manage.py makemigrations
-pipenv run python manage.py migrate
-pipenv run python manage.py runscript new_db
+docker exec -it shotel_backend pipenv run python manage.py makemigrations
+docker exec -it shotel_backend pipenv run python manage.py migrate
+docker exec -it shotel_backend pipenv run python manage.py runscript new_db
