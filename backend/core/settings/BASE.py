@@ -2,11 +2,11 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'j)s5*3lnq@bqnzzuomrug^+0-2s^+@4(v!9a_9t(xxlp9ht+m5'
+SECRET_KEY = os.environ['SECRET_KEY']
 
-DEBUG = True
+DEBUG = bool(os.environ['DEBUG'])
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS'].split(' ')
 
 ROOT_URLCONF = 'core.urls'
 
