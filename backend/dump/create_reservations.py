@@ -32,7 +32,7 @@ def create_reservations():
                                      email=fake.email(),
                                      comment=fake.text())
         try:
-            guest.reservations.create(room=random.choice([room for room in rooms if room.is_available]),
+            guest.reservations.create(room=random.choice([room for room in rooms]),
                                       guest=guest,
                                       check_in=fake.date_between(start_date='today',
                                                                  end_date='+14d'),
