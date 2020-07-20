@@ -1,5 +1,7 @@
 echo "Available commands:"
 echo "*  commands                   show available commands"
 echo "*  newdb                      create dump data"
+echo "*  init                       initialize project in docker"
 echo "*  start                      run backend server"
 echo "*  stop                       stop backend server"
+echo "*  test                       run tests"

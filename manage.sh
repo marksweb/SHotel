@@ -19,6 +19,9 @@ elif [[ $COMMAND = "stop" ]]
 elif [[ $COMMAND = "commands" ]]
     then 
         sh commands.sh
+elif [[ $COMMAND = "test" ]]
+    then 
+        sh test.sh
 else
     sh commands.sh
 fi

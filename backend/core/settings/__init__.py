@@ -9,4 +9,5 @@ include(
     'MIDDLEWARE.py',
     'REST_FRAMEWORK.py',
     'TEMPLATES.py',
+    'TESTING.py',
 )
