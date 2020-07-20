@@ -17,4 +17,5 @@ INSTALLED_APPS = [
 
     # dev apps
     'django_extensions',
+    'django_nose',
 ]
