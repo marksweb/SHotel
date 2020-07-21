@@ -4,7 +4,7 @@ from ...models import Guest
 class TestGuest:
 
     def setUp(self):
-        self.guest = Guest.objects.create(first_name='John', 
+        self.guest = Guest.objects.create(first_name='John',
                                           last_name='Doe',
                                           sex='M',
                                           birth_date='2007-01-01',

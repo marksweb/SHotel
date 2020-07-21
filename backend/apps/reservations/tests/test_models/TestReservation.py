@@ -7,14 +7,14 @@ from ...models import Reservation, Guest
 class TestReservation:
 
     def setUp(self):
-        self.employee = Employee.objects.create(first_name='John', 
+        self.employee = Employee.objects.create(first_name='John',
                                                 last_name='Doe',
                                                 sex='M',
                                                 birth_date='1996-01-23',
                                                 function='RT',
                                                 phone_number='+48123456789',
                                                 passport_number='AEO123456')
-        self.guest = Guest.objects.create(first_name='John', 
+        self.guest = Guest.objects.create(first_name='John',
                                           last_name='Doe',
                                           sex='M',
                                           birth_date='2007-01-01',

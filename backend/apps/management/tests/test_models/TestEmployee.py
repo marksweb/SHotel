@@ -4,7 +4,7 @@ from ...models import Employee
 class TestEmployee:
 
     def setUp(self):
-        self.employee = Employee.objects.create(first_name='John', 
+        self.employee = Employee.objects.create(first_name='John',
                                                 last_name='Doe',
                                                 sex='M',
                                                 birth_date='1996-01-23',
