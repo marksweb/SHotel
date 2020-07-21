@@ -6,7 +6,8 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 DEBUG = bool(os.environ['DEBUG'])
 
-ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS'].split(' ')
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
+ALLOWED_HOSTS = [] if not any(ALLOWED_HOSTS) else ALLOWED_HOSTS
 
 ROOT_URLCONF = 'core.urls'
 
