@@ -22,6 +22,9 @@ elif [[ $COMMAND = "commands" ]]
 elif [[ $COMMAND = "test" ]]
     then 
         sh test.sh
+elif [[ $COMMAND = "circle" ]]
+    then 
+        sh circle.sh
 else
     sh commands.sh
 fi
