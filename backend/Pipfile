@@ -4,6 +4,11 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+flake8 = "*"
+django-nose = "*"
+coverage = "*"
+faker = "*"
+django-extensions = "*"
 
 [packages]
 django = "*"
@@ -11,12 +16,7 @@ django-split-settings = "*"
 django-countries = "*"
 phonenumberslite = "*"
 django-phonenumber-field = "*"
-django-extensions = "*"
-faker = "*"
 djangorestframework = "*"
-coverage = "*"
-django-nose = "*"
-flake8 = "*"
 
 [requires]
 python_version = "3.7"
