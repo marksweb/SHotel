@@ -1,1 +1,1 @@
-docker exec -it shotel_backend pipenv run python manage.py test
+docker exec -it shotel_backend pipenv run python manage.py test --keepdb
