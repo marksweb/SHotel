@@ -15,7 +15,7 @@ jobs:
           command: |
             sudo pip install pipenv flake8 isort
             cd backend
-            pipenv install
+            pipenv install --dev
       - run:
           name: Test
           command: |

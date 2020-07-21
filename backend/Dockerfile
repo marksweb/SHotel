@@ -6,6 +6,6 @@ RUN mkdir /backend
 WORKDIR /backend
 
 ADD Pipfile Pipfile.lock /backend/
-RUN pipenv install
+RUN pipenv install --dev
 
 ADD . /backend/
