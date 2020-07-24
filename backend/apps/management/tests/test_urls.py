@@ -1,8 +1,6 @@
 from django.contrib.auth import get_user_model
-
-from rest_framework.test import APIClient
-
 from faker import Faker
+from rest_framework.test import APIClient
 
 User = get_user_model()
 fake_profile = Faker().simple_profile()

@@ -1,7 +1,8 @@
 from rest_framework import routers
 
-from .views import (RoomViewSet, RoomTypeViewSet,
-                    EmployeeViewSet,)
+from .views import (
+    RoomViewSet, RoomTypeViewSet, EmployeeViewSet
+)
 
 
 router = routers.DefaultRouter()

@@ -1,1 +1,0 @@
-from .SEX_CHOICES import SEX_CHOICES
