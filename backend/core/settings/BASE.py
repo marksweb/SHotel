@@ -9,6 +9,8 @@ DEBUG = bool(os.environ['DEBUG'])
 ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
 ALLOWED_HOSTS = [] if not any(ALLOWED_HOSTS) else ALLOWED_HOSTS
 
+AUTH_USER_MODEL = 'management.Employee'
+
 ROOT_URLCONF = 'core.urls'
 
 WSGI_APPLICATION = 'core.wsgi.application'
