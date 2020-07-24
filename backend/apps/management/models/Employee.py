@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 from phonenumber_field.modelfields import PhoneNumberField
-from backend.apps.utils.choices import SEX_CHOICES
+from apps.utils.choices import SEX_CHOICES
 
 
 class Employee(AbstractUser):
